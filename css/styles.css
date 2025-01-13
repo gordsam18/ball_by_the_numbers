@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.hamburger-menu {
+    text-align: right;
+    padding: 5px 10px ;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li a {
+    color:white;
+    text-decoration: none;
+}
+
+
+.hamburger-menu  div ul {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.control-box {
+    background-color: #ffffff;
+    border: 1px solid #1e90ff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.control-box input,
+.control-box select,
+.control-box button {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.control-box button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.control-box button:hover {
+    background-color: #4682b4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    border: 1px solid #1e90ff;
+    text-align: left;
+    padding: 10px;
+}
+
+table th {
+    background-color: #1e90ff;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}

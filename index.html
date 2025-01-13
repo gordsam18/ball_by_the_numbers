@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Ball By The Numbers</title>
 </head>
-<body>
-    <h1>Ball by the Numbers</h1>
 
-    <h2>JavaScript</h2>
-    <!-- We will want a:
+ <!-- We will want a:
       table displaying all the players
       filter by:
         position
         team
         division
+        etc...
 
       Sort by:
         TDs
@@ -27,26 +26,98 @@
       a player profile page
       team profile page 
       coach profile page
-    -->
+-->
 
-
-    <table class="sortable">
-        <thead>
-            <tr>
-                <th>Player</th>
-                <th>Position</th>
-                <th>Team</th>
-                <th>Games Started</th>
-                <th>Games Played</th>
-                <th>Age</th>
-                <th>Years Experience</th>
-            </tr>
-        </thead>
-        <tr class="myclass" id="player_table">
-            
-        </tr>
-    </table>
+<body>
+    <header>
+        <h1>Fantasy Football</h1>
+        <div class="hamburger-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/player.html">Players</a></li>
+                <li><a href="pages/team.html">Teams</a></li>
+                <li><a href="pages/coach.html">Coaches</a></li>
+                <li><a href="pages/compare.html">Compare</a></li>
+                <li><a href="pages/ml.html"> Machine Learning</a></li>
+            </ul>
     
+        </div>  
+    </header>
+
+    <div class="container">
+        <div class="control-box">
+            <label for="search">Search:</label>
+            <input type="text" id="search" placeholder="Search players">
+
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="name">Name</option>
+                <option value="position">Position</option>
+                <option value="team">Team</option>
+                <option value="fantasy_points">Fantast Points</option>
+                <option value="completions">Completions</option>
+                <option value="passing-attempts">Passing Attempts</option>
+                <option value="passing-tds">Passing TDs</option>
+                <option value="passing-yards">Passing Yards</option>
+                <option value="int">INT</option>
+                <option value="carries">Carries</option>
+                <option value="rushing-yards">Rushing Yards</option>
+                <option value="rushing-tds">Rushing TDs</option>
+                <option value="receptions">Receptions</option>
+                <option value="targets">Targets</option>
+                <option value="receiving-yards">Receiving Yards</option>
+                <option value="receiving-tds">Receiving Tds</option>
+                <option value="pc">2PC</option>
+                <option value="fumbles">Fumbles</option>
+                <option value="return-tds">Return Tds</option>
+                <option value="avg-fppg">Average FPPG</option>
+
+            </select>
+
+            <button id="apply-filters">Apply</button>
+        </div>
+        <div class="flex">
+            <table  >
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>Points</th>
+                        <th>Completions</th>
+                        <th>Attempts</th>
+                        <th>TDs</th>
+                        <th>Yards</th>
+                        <th>INT</th>
+                        <th>Carries</th>
+                        <th>Yards</th>
+                        <th>Rushing TDs</th>
+                        <th>Receptions</th>
+                        <th>Targets</th>
+                        <th>Receiving Yards</th>
+                        <th>Receiving TDs</th>
+                        <th>2PC</th>
+                        <th>Fumbles</th>
+                        <th>Return TDs</th>
+                        <th>Average FPPG</th>
+                    </tr>
+                </thead>
+                <tbody id="fantasyTable">
+                </tbody>
+            </table>
+        </div>
+        
+        
+    </div>
+    
+
+    
+    
+   
+
+    <footer>
+        
+    </footer>
+    <script src="js/index.js"></script>
 </body>
-<script src="js/index.js"></script>
 </html>
